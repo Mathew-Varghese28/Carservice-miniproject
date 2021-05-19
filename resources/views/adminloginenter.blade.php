@@ -56,6 +56,13 @@
             </div>
             </td>
             </tr>
+            <tr>
+            <td>
+            <div class="d-grid gap-2">
+            <a href="/adminregister" class="btn btn-success">Register A New Admin</a>
+            </div>
+            </td>
+            </tr>
             
 
         </table>

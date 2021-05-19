@@ -1,8 +1,8 @@
-@extends("theme")
+@extends("theme1")
 
 @section("content")
 
-<body style="background-color:rgb(100, 149, 237);" class="bg">
+<body background="https://4kwallpapers.com/images/wallpapers/ios-13-stock-ipados-red-black-background-amoled-hd-2560x1440-799.jpg"  style="height: 100%; background-position: center; background-repeat: no-repeat; background-size: cover;">
 
 <div class="container">
 

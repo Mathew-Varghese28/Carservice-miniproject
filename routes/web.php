@@ -19,7 +19,7 @@ use App\Http\Controllers\addemployeecontroller;
 */
 
 
-Route::get("/adminregister",[adminlogincontroller::class,'create']);
+
 
 Route::post("/adminregisterread",[adminlogincontroller::class,'store']);
 
@@ -83,7 +83,7 @@ Route::group(['middleware'=>['AuthCheck']],function(){
 
 
 
-
+    Route::get("/adminregister",[adminlogincontroller::class,'create']);
     
 
 

@@ -33,7 +33,6 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="/adminlogin">Admin Login</a></li>
-            <li><a class="dropdown-item" href="/adminregister">Admin register</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="/userfeedbackform">Feedback Form</a></li>
           </ul>

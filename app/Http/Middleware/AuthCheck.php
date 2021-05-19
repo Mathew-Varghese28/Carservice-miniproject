@@ -19,13 +19,13 @@ class AuthCheck
         
         
       
-            if (!session()->has('loggeduser') && ($request->path()=='adminloginenter' || $request->path()=='addemployee' || $request->path()=='viewallemployee' || $request->path()=='viewallservices' || $request->path()=='viewallfeedback'))
+            if (!session()->has('loggeduser') && ($request->path()=='adminloginenter' || $request->path()=='addemployee' || $request->path()=='viewallemployee' || $request->path()=='viewallservices' || $request->path()=='viewallfeedback' || $request->path()=='adminregister' ))
             {
                 return redirect ('adminlogin')->with('fail','You Must be logged in');
               
             }
             
-            if (session()->has('loggeduser') && ( $request->path()=='adminlogin' || $request->path()=='/' || $request->path()=='photogalary' || $request->path()=='servicedetails'|| $request->path()=='adminregister' ))
+            if (session()->has('loggeduser') && ( $request->path()=='adminlogin' || $request->path()=='/' || $request->path()=='photogalary' || $request->path()=='servicedetails' ))
             {
                 return redirect ('adminlogin');
             }
