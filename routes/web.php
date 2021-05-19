@@ -19,6 +19,13 @@ use App\Http\Controllers\addemployeecontroller;
 */
 
 
+Route::get("/adminregister",[adminlogincontroller::class,'create']);
+
+Route::post("/adminregisterread",[adminlogincontroller::class,'store']);
+
+
+
+
 Route::get("/",[adminlogincontroller::class,'home']);
 
 Route::get("/photogalary",[adminlogincontroller::class,'gallery']);

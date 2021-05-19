@@ -114,7 +114,7 @@ class adminlogincontroller extends Controller
      */
     public function create()
     {
-        //
+        return view ('adminregister');
     }
 
     /**
@@ -125,7 +125,27 @@ class adminlogincontroller extends Controller
      */
     public function store(Request $request)
     {
-        
+        $getaname=request('aname');
+        $getauname=request('auname');
+        $getapass=request('apass');
+
+        echo  $getaname;
+        echo "<br>";
+        echo  $getauname;
+        echo "<br>";
+        echo $getapass;
+
+
+        $login=new loginmodel;
+
+        $login->name =$getaname;
+        $login->username=$getauname;
+        $login->password=$getapass;
+
+        $login->save();
+
+        return redirect('adminregister');
+
     }
 
     /**
