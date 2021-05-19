@@ -128,13 +128,13 @@ class adminlogincontroller extends Controller
         $getaname=request('aname');
         $getauname=request('auname');
         $getapass=request('apass');
-
+/*
         echo  $getaname;
         echo "<br>";
         echo  $getauname;
         echo "<br>";
         echo $getapass;
-
+*/
 
         $login=new loginmodel;
 
