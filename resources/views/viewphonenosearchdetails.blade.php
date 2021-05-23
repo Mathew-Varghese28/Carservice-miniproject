@@ -3,8 +3,21 @@
 @section("content")
 
 
+
+
+<style type="text/css">
+@media print {
+    #hide {
+        display :  none;
+    }
+}
+</style>
+
+
 <div class="container">
 <h1><center><u>Service Details</center></u></h1>
+<div style="text-align:right"> 
+<div class="text-right"><button id="hide" class="btn btn-outline-warning" onclick="window.print()">Print</button></div></div>
 
 <table class="table">
 

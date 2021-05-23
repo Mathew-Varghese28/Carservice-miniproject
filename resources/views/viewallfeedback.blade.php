@@ -2,6 +2,14 @@
 
 @section("content")
 
+<style type="text/css">
+@media print {
+    #hide {
+        display :  none;
+    }
+}
+</style>
+
 
 
 <div class="container">
@@ -9,6 +17,7 @@
 
 <form class="d-flex" method="post" action="/feedbacksearch">
       {{csrf_field() }}
+      <div id="hide">
 <nav class="navbar navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand"></a>
@@ -17,7 +26,9 @@
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
   </div>
+  <div style="text-align:right"> <div class="text-right"><button id="hide" class="btn btn-outline-warning" onclick="window.print()">Print</button></div></div>
 </nav>
+</div>
     
     <table class="table">
     <tr>
