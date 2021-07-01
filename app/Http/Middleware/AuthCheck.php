@@ -27,7 +27,7 @@ class AuthCheck
             
             if (session()->has('loggeduser') && ( $request->path()=='adminlogin' || $request->path()=='/' || $request->path()=='photogalary' || $request->path()=='servicedetails' ))
             {
-                return redirect ('adminlogin');
+                return redirect ('adminloginenter');
             }
                 
 
