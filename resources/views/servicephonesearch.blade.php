@@ -6,7 +6,7 @@
 
 <div class="container">
 
-<h1><b><center>Admin Login</center></b></h1>
+<h1><b><center>Service Details</center></b></h1>
 
     <div class="row">
         <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
