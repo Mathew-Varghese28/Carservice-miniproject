@@ -49,28 +49,30 @@
 
         <table class="table table-borderless">
         
-            <input name="sname" type="text" class="form-control" placeholder="Name">
+            <input name="sname" type="text" class="form-control" placeholder="Name" required>
         <br>
-        <input name="sphoneno" type="text" class="form-control" placeholder="Phone Number">
-        <br>
-        
-            <input name="smodel" type="text" class="form-control" placeholder="Model of Car">
-        <br>
-        
-            <input name="scarname" type="text" class="form-control" placeholder="Car Name">
+        <input name="sphoneno" type="text" class="form-control" placeholder="Phone Number" required>
+        <span class="text-danger">@error('sphoneno'){{ $message}} @enderror </span>
+
         <br>
         
-            <input name="scarno" type="text" class="form-control" placeholder="Car Number">
+            <input name="smodel" type="text" class="form-control" placeholder="Model of Car" required>
         <br>
         
-            <input name="sservicetype" type="text" class="form-control" placeholder="Type of Services/ Reparing Details">
+            <input name="scarname" type="text" class="form-control" placeholder="Car Name" required>
+        <br>
+        
+            <input name="scarno" type="text" class="form-control" placeholder="Car Number" required>
+        <br>
+        
+            <input name="sservicetype" type="text" class="form-control" placeholder="Type of Services/ Reparing Details" required>
         <br>
         
             <label style="color:white"> Date of Entered</label>
-            <input name="sdateentered" type="date" class="form-control" placeholder="Date of Repare">
+            <input name="sdateentered" type="date" class="form-control" placeholder="Date of Repare" required>
         <br>
         
-            <textarea name="sothers" id="" cols="10" rows="5" class="form-control" placeholder="Other Maintainence"></textarea>
+            <textarea name="sothers" id="" cols="10" rows="5" class="form-control" placeholder="Other Maintainence" ></textarea>
         <br>
 
         

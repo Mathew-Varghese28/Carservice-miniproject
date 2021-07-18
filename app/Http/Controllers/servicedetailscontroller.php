@@ -42,13 +42,12 @@ class servicedetailscontroller extends Controller
      */
     public function store(Request $request)
     {
-        /*
-        $request->validate([
-            'sname' => 'required',
-            'scarname'=>'required',
-            'sdateentered'=> 'required',
+        
+        $this->validate($request,[
+            'sphoneno' => 'digits:10|unique:App\Models\servicedetailsmodel,sphoneno',
 
-        ])*/
+        ]);
+
         $s_id = Helper::IDGenerator(new servicedetailsmodel, 's_id', 3, 'SER');  /* Generate id SER for service */
         $getsname=request('sname');
         $getsphoneno=request('sphoneno');
