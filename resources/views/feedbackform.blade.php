@@ -40,12 +40,12 @@
         <form action="/feedbackformread" method="post">
             {{csrf_field() }}
         <table class="table">
-            <input name="fname" type="text" class="form-control" placeholder="Enter your Name"><br>
-            <input name="femail" type="email" class="form-control" placeholder="Email"><br>
-            <input name="fcontactno" type="text" class="form-control" placeholder="Contact No"><br>
-            <textarea name="ffeed" id="" cols="4" rows="4" class="form-control" placeholder="Feedback"></textarea><br>
-            <textarea name="fcomplaints" id="" cols="4" rows="4" class="form-control" placeholder="Complaints"></textarea><br>
-            <textarea name="fsuggection" id="" cols="4" rows="4" class="form-control" placeholder="Suggection"></textarea><br>
+            <input name="fname" type="text" class="form-control" placeholder="Enter your Name" required><br>
+            <input name="femail" type="email" class="form-control" placeholder="Email" required><br>
+            <input name="fcontactno" type="text" class="form-control" placeholder="Contact No" required><br>
+            <textarea name="ffeed" id="" cols="4" rows="4" class="form-control" placeholder="Feedback" required></textarea><br>
+            <textarea name="fcomplaints" id="" cols="4" rows="4" class="form-control" placeholder="Complaints" required></textarea><br>
+            <textarea name="fsuggection" id="" cols="4" rows="4" class="form-control" placeholder="Suggection" required></textarea><br>
             <br>
             <button class="btn btn-success">Submit</button>
         </table>
